@@ -14,5 +14,4 @@ RUN pip install numpy
 RUN pip install --pre onnxruntime-genai-cuda --index-url=https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-genai/pypi/simple/
 
 RUN curl https://raw.githubusercontent.com/microsoft/onnxruntime-genai/main/examples/python/phi3-qa.py -o phi3-qa.py
-RUN nvidia-smi
 # RUN python phi3-qa.py -m cuda/cuda-int4-rtn-block-32
